@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap');
+
+
+:root {
+    --font-header: 'Playfair Display', serif;
+    --font-main: 'Raleway', sans-serif;
+    --color-purple-light: #715D74;
+    --color-purple-dark: #514253;
+    --color-tan: #CFB3A5;
+    --color-light-gray: #E6DCE8;
+    --color-brown: #403232;
+    --gradient-purple: radial-gradient(circle, rgba(113,93,116,1) 0%, rgba(207,179,165,1) 100%);
+    --gradient-tan: radial-gradient(circle, rgba(207,179,165,1) 0%, rgba(113,93,116,1) 100%);
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--font-main);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    background-color: var(--color-light-gray);
+}
+
+
+
+/******************NAV******************/
+.nav-title {
+    font-family: var(--font-header);
+    font-size: 48px;
+    font-weight: 400;
+    padding: 5px;
+    margin-left: 20px;
+    color: var(--color-purple-dark)
+}
+
+.deco-bar {
+    width: 100%;
+    height: 5px;
+    background: var(--gradient-tan);
+}
+
+.nav-list {
+    display: flex;
+    padding-top: 5px;
+    margin-bottom: 50px;
+    justify-content: flex-end;
+}
+
+.nav-link {
+    padding: 0 10px;
+    color: var(--color-purple-dark);
+    font-size: 14px;
+}
+
+
+
+
+/******************SPLASH**********************/
+
+.splash {
+    position: relative;
+    background-color: #29232A;
+}
+
+.splash-image {
+    opacity: .22;
+}
+
+.splash-text {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 30%;
+
+    font-size: 54px;
+    color: var(--color-tan);
+    line-height: 80px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.footer-social-media {
+    color: var(--color-tan);
+}
+
+
+
+
+
+/***************CURSOS************************/
+
+.cursos-section {
+
+    margin: 150px 0  200px 0;
+}
+
+.cursos {
+    display: flex;
+    justify-content: space-around;
+    max-width: 80%;
+    margin: auto;
+}
+
+.cursos-title {
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 48px;
+    font-family: var(--font-header);
+    color: var(--color-purple-dark);
+    font-weight: 400;
+}
+
+.curso {
+    max-width: 25%;
+    text-align: center;
+}
+
+.curso .curso-title {
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color:  var(--color-brown);
+}
+
+
+
+
+
+
+
+/****************SOBRE********************/
+
+
+.sobre {
+    background-color: var(--color-purple-light);
+
+}
+
+.sobre-content{ 
+    text-align: center;
+    margin: 50px 0;
+}   
+
+.sobre-title {
+    font-family: var(--font-header);
+    font-size: 48px;
+    font-weight: 400;
+    color: var(--color-tan);
+}
+
+.sobre-text {
+    max-width: 50%;
+    margin: auto;
+    padding: 100px 0 50px 0;
+    font-size: 1rem;
+    color: white;
+    line-height: 1.5;
+
+}
+
+
+
+
+/****************EVENTOS********************/
+
+.eventos-section {
+    padding: 100px 0;
+    position: relative;
+}
+
+.eventos {
+    display: flex;
+    padding: 100px 200px;
+    justify-content: space-around;
+
+}
+
+.eventos-title {
+    font-family: var(--font-header);
+    font-size: 48px;
+    font-weight: 400;
+    color: var(--color-purple-light);
+    text-align: center;
+}
+
+.eventos-image {
+    max-width: 30%;
+    border-radius: 25px;
+}
+
+.eventos-deco {
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    top: 35%;
+    left: 0;
+    z-index: -1;
+}
+
+.eventos-deco-center {
+    height: 100%;
+    background-color: var(--color-tan);
+
+}
+
+.eventos-deco-bar {
+    width: 100%;
+    height: 10px;
+    background: var(--gradient-purple);
+}
+
+
+
+/*****************FOOTER************************/
+
+footer {
+    background-color: var(--color-purple-light);
+}
+
+.footer-content {
+    padding: 20px 0;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--color-tan);
+}
+
+.footer-title {
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.footer-email {
+    font-weight: 400;
+}
+
+.footer-phone {
+    font-weight: 400;
+}
+
+.footer-social-media {
+    display: flex;
+    justify-content: center;
+}
+.footer-social-media img {
+    max-width: 32px;
+    margin: 10px 5px;
+}
+
+
+
