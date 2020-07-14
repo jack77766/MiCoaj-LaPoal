@@ -39,21 +39,34 @@
 
 <section class="cursos-section">
     <h1 class="cursos-title">Nuestros Cursos</h1>
-    <div class="cursos">
-        <div class="curso">
-            <img src="images/bat.jpg" alt="Bat Mitzvah">
+    <div class="cursos-carousel-container">
+
+        <img id='arrow-left'  class='arrow-left'  src="images/arrow-left.png"  alt="">
+
+        <div class="cursos-carousel">
+            <div class="curso bat hidden-left">
+                <img src="images/bat.jpg" alt="Bat Mitzvah">
                 <h5 class="curso-title">Bat Mitzvah</h5>
             </div>
-            <div class="curso">
+            <div class="curso madres left">
                 <img src="images/madres.jpg" alt="Educacion de Madres">
                 <h5 class="curso-title">Educacion de Madres</h5>
             </div>
-            <div class="curso">
+            <div class="curso matrimonio main">
                 <img src="images/matrimonio.jpg" alt="Matrimonio | Dating">
                 <h5 class="curso-title">Matrimonio | Dating</h5>
             </div>
-        <img id='arrow-left'  class='arrow-left'  src="images/arrow-left.png"  alt="">
-        <img id='arrow=right' class='arrow-right' src="images/arrow-right.png" alt="">
+            <div class="curso shelijut right">
+                <img src="images/shelijut.jpg" alt="Shelijut">
+                <h5 class="curso-title">Shelijut</h5>
+            </div>
+            <div class="curso conference hidden-right">
+                <img src="images/conference.png" alt="Educacion de Equipos">
+                <h5 class="curso-title">Educacion de Equipos</h5>
+            </div>
+        </div>
+
+        <img id='arrow-right' class='arrow-right' src="images/arrow-right.png" alt="">
     </div>
 </section>
 
@@ -106,5 +119,7 @@
 
 
 
+
+<script src="js/main.js"></script>
 </body>
 </html>

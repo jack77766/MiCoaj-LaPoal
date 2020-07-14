@@ -162,16 +162,17 @@ body {
 
 .cursos-section {
 
-    margin: 150px 0  200px 0;
+    margin: 150px 0  50px 0;
 }
 
-.cursos {
+/* .cursos {
     position: relative;
     display: flex;
     justify-content: space-around;
     max-width: 80%;
     margin: auto;
-}
+
+} */
 
 .cursos-title {
     text-align: center;
@@ -182,13 +183,101 @@ body {
     font-weight: 400;
 }
 
-/* .cursos-caroussel {
+/* .cursos-carousel {
+    position: relative;
     display: grid;
-    grid-template-columns: 5% 90% 5%;
+    max-width: 80%;
+    margin: auto;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     align-items: center;
+    grid-template-areas: 
+            "left main right";
+    transition: all 11s ease-in;
+    transition: opacity 11s ease-in;          
+            
 } */
 
-.arrow-left {
+
+.cursos-carousel-container {
+    display: grid;
+    grid-template-columns: 48px 80% 48px;
+    margin: auto;
+    justify-content: center;
+}
+
+.arrow-left,
+.arrow-right {
+    align-self: center;
+}
+
+.cursos-carousel {
+    /* width: 100%; */
+    position: relative;
+    height: 480px;
+    overflow: hidden;
+}
+
+.curso {
+    position: absolute;
+    max-width: 30%;
+    text-align: center;
+    transition: transform 500ms ease-in, opacity 500ms ease-in;
+    
+}
+
+
+
+.hidden-left {
+    transform: translateX(-120%) scale(.85);
+}
+
+.left {
+    transform: translateX(0) scale(.85);
+    opacity: .6;
+}
+.main {
+    transform: translateX(120%);
+    opacity: 1;
+}
+.right {
+    transform: translateX(240%) scale(.85);
+    opacity: .6;
+}
+.hidden-right {
+    transform: translateX(360%) scale(.85);
+}
+.hidden {
+    visibility: hidden;
+}
+
+
+
+/* .hidden-left {
+    display: none;
+}
+.left {
+    grid-area: left;
+    transform: scale(.85);
+    opacity: .8;
+}
+.main {
+    grid-area: main;
+    opacity: 1;
+}
+.right {
+    grid-area: right;
+    transform: scale(.85);
+    opacity: .8;
+}
+.hidden-right {
+    display: none;
+} */
+
+
+
+/* .arrow-left {
     position: absolute;
     left: -48px;
     top: 35%;
@@ -203,12 +292,18 @@ body {
     top: 35%;
     left: 100%;
     cursor: pointer;
-}
+} */
 
-.curso {
-    max-width: 25%;
+/* .curso {
+    max-width: 30%;
     text-align: center;
-}
+    transition: all 11s ease-in;
+    transition: opacity 11s ease-in;
+} */
+
+/* .curso img {
+    height: 100%;
+} */
 
 .curso .curso-title {
     padding-top: 10px;
