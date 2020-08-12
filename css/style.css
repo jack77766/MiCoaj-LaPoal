@@ -387,11 +387,12 @@ footer {
     line-height: 1.5;
     text-align: center;
     color: var(--color-tan);
+    font-size: 1.25rem;
 }
 
 .footer-title {
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 2rem;
 }
 
 .footer-email {
