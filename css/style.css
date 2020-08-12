@@ -165,57 +165,35 @@ body {
     margin: 150px 0  50px 0;
 }
 
-/* .cursos {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    max-width: 80%;
-    margin: auto;
-
-} */
 
 .cursos-title {
     text-align: center;
     margin-bottom: 100px;
-    font-size: 48px;
+    font-size: 2rem;
     font-family: var(--font-header);
     color: var(--color-purple-dark);
     font-weight: 400;
 }
 
-/* .cursos-carousel {
-    position: relative;
-    display: grid;
-    max-width: 80%;
-    margin: auto;
-    gap: 15px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    align-items: center;
-    grid-template-areas: 
-            "left main right";
-    transition: all 11s ease-in;
-    transition: opacity 11s ease-in;          
-            
-} */
-
 
 .cursos-carousel-container {
     display: grid;
     grid-template-columns: 48px 80% 48px;
+    gap: 20px;
     margin: auto;
     justify-content: center;
+    height: 30vw;
 }
 
 .arrow-left,
 .arrow-right {
     align-self: center;
+    margin-top: -5vw;
 }
 
 .cursos-carousel {
     /* width: 100%; */
     position: relative;
-    height: 480px;
     overflow: hidden;
 }
 
@@ -223,59 +201,78 @@ body {
     position: absolute;
     max-width: 30%;
     text-align: center;
+    overflow: hidden;
     transition: transform 500ms ease-in, opacity 500ms ease-in;
     
 }
 
 
+.curso a {
+    content: 'Aprenda Mas';
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    left: 0;
+    /* transform: translateX(100%); */
+    opacity:0;
+    transition: opacity 350ms ease-in;
+    font-family: var(--font-main);
+    color: var(--color-light-gray);
+    font-size: 1.5rem;
+}
+
+.curso:hover a {
+    /* transform: translateX(0); */
+    opacity: 1;
+}
+
+
+
+.curso-title {
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color:  var(--color-brown);
+    transition: transform 500ms ease-in;
+}
+
+.curso-image-container {
+    background-color: var(--color-purple-dark);
+    overflow: hidden;
+}
+
+.curso img {
+    transition: transform 250ms ease-in, opacity 500ms ease-in;
+    
+}
+.curso:hover img {
+    opacity: 0.25;
+    transform: scale(1.05);
+}
+
+
+
+/* CAROUSEL FUNCTIONALITY */
 
 .hidden-left {
-    transform: translateX(-120%) scale(.85);
+    transform: translateX(-120%);
 }
 
 .left {
-    transform: translateX(0) scale(.85);
-    opacity: .6;
+    transform: translateX(0);
 }
 .main {
     transform: translateX(120%);
-    opacity: 1;
 }
 .right {
-    transform: translateX(240%) scale(.85);
-    opacity: .6;
+    transform: translateX(240%);
 }
 .hidden-right {
-    transform: translateX(360%) scale(.85);
+    transform: translateX(360%);
 }
 .hidden {
     visibility: hidden;
 }
-
-
-
-/* .hidden-left {
-    display: none;
-}
-.left {
-    grid-area: left;
-    transform: scale(.85);
-    opacity: .8;
-}
-.main {
-    grid-area: main;
-    opacity: 1;
-}
-.right {
-    grid-area: right;
-    transform: scale(.85);
-    opacity: .8;
-}
-.hidden-right {
-    display: none;
-} */
-
-
 
 /* .arrow-left {
     position: absolute;
@@ -293,27 +290,6 @@ body {
     left: 100%;
     cursor: pointer;
 } */
-
-/* .curso {
-    max-width: 30%;
-    text-align: center;
-    transition: all 11s ease-in;
-    transition: opacity 11s ease-in;
-} */
-
-/* .curso img {
-    height: 100%;
-} */
-
-.curso .curso-title {
-    padding-top: 10px;
-    font-size: 20px;
-    font-weight: 400;
-    color:  var(--color-brown);
-}
-
-
-
 
 /****************SOBRE********************/
 
@@ -357,8 +333,9 @@ body {
 
 .eventos {
     display: flex;
-    padding: 100px 200px;
+    /* padding: 100px 200px; */
     justify-content: space-around;
+    align-items: center;
 
 }
 
@@ -368,10 +345,11 @@ body {
     font-weight: 400;
     color: var(--color-purple-light);
     text-align: center;
+    margin-bottom: 100px;
 }
 
 .eventos-image {
-    max-width: 30%;
+    max-width: 28%;
     border-radius: 25px;
 }
 
@@ -379,7 +357,7 @@ body {
     position: absolute;
     height: 30%;
     width: 100%;
-    top: 35%;
+    top: 45%;
     left: 0;
     z-index: -1;
 }
